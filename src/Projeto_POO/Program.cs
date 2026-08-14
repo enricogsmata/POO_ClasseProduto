@@ -35,7 +35,10 @@ namespace Projeto_POO
             Console.WriteLine("Produtos Cadastrados: \n");
             int i = 1;
             foreach(Produto produto in produtos)
+            {
                 Console.WriteLine($"{i} - {produto.NotaDeVenda()}");
+                i++;
+            }
         }
 
         private static void DadosProduto()
