@@ -65,9 +65,9 @@ namespace Projeto_POO
             Console.Write("Descrição: ");
             descricao = Console.ReadLine();
             Console.Write("Preço de custo (R$): ");
-            precoCusto = int.Parse(Console.ReadLine());
+            precoCusto = double.Parse(Console.ReadLine());
             Console.Write("Margem de lucro (10-50%): ");
-            margemLucro = int.Parse(Console.ReadLine());
+            margemLucro = double.Parse(Console.ReadLine());
             novo = new Produto(descricao, precoCusto, margemLucro);
             produtos.AddLast(novo);
 
